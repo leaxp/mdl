@@ -21,6 +21,8 @@ from classes import LeNet, ImageEdit, ImageNormalize
 
 * Most of examples also contains a python notebook with some basic notes and comments about the code. 
 
+Teste
+
 ---
 
 # 2. APS

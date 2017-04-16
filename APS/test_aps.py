@@ -41,7 +41,7 @@ aps = LeNet(rw_set[1].shape, conv_1, pool_1, conv_2, pool_2, hidden,
             classes)
 aps.model.compile(loss='categorical_crossentropy', optimizer='adam',
                   metrics=["accuracy"])
-aps.model.load_weights('output/aug_lenet_weights.hdf5')
+aps.model.load_weights('output/lenet_weights.hdf5')
 
 # Testing aps model of both sets
 print("[INFO] Test model in real world set...")
@@ -55,7 +55,7 @@ print("[INFO] accuracy: {:.2f}%".format(accuracy * 100) +
       " - loss: {:.2f}".format(loss))
 
 imlabel = ['any', 'einstein', 'curie']
-for i in np.random.choice(np.arange(0, len(rw_labels)), size=(10,)):
+for i in np.random.choice(np.arange(0, len(rw_labels)), size=(12,)):
     print("[INFO] Predicted: {}, Actual: {}".format(rw_prediction[i],
 		np.argmax(rw_labels[i])))
     image = (rw_set[i] * 255).astype("uint8")
@@ -63,5 +63,7 @@ for i in np.random.choice(np.arange(0, len(rw_labels)), size=(10,)):
     cv2.putText(image, str(imlabel[rw_prediction[i]]), (5, 20),
 	 	cv2.FONT_HERSHEY_SIMPLEX, 0.65, (0, 255, 0), 2)
     cv2.imshow("Digit", image)
+    #cv2.imwrite("output/{}.jpg".format(i), image)
     cv2.waitKey(0)
+    
 

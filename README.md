@@ -14,10 +14,10 @@ My Deep Learning (mdl) is a repository where I'll keep all my learnt example reg
 ```
 
 > Here the **\__init\__.py** defines the core folder as a module. Usually it imports the create classes like this:
-    
->```javascript
-from classes import LeNet, ImageEdit, ImageNormalize
-```
+> 
+ ```javascript
+ from classes import LeNet, ImageEdit, ImageNormalize
+ ```
 
 * Most of examples also contains a python notebook with some basic notes and comments about the code. 
 

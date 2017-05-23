@@ -22,7 +22,7 @@ My Deep Learning (mdl) is a repository where I'll keep all my learnt example reg
 * Most of examples also contains a python notebook with some basic notes and comments about the code. 
 
 # 2. APS
-Here as part of the excersices proposed for the quantum machine learning reading group ([qml-rg](https://github.com/peterwittek/qml-rg.git)) we used the basic LeNet CNN architeture to identify the Einstein or Marie Curie images into a given set of images. Here we tried two ways of training the model: Standard and using **Augmentation** for the training dataset. Turns out that the use us augementation improves enormously the accuracy of the model.  
+Here as part of the exercises proposed for the quantum machine learning reading group ([qml-rg](https://github.com/peterwittek/qml-rg.git)) we used the basic LeNet CNN architeture to identify the Einstein or Marie Curie images into a given set of images. Here we tried two ways of training the model: Standard and using **Augmentation** for the training dataset. Turns out that the use us augementation improves enormously the accuracy of the model.  
 
 | model     | Accuracy | Loss  |
 | --------- |:--------:|:-----:|

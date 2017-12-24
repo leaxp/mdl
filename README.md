@@ -2,9 +2,9 @@
 
 This is a brief summary of my learnt topics in deep learning. Although this is not a tutorial you can still find some usefull codes in the correspodent topic folder.
 
-# 3. Autoencoders
+# 3. ConvNet Autoencoders
 
-Along my studies of convolutional neural networks (ConvNet) autoencoders, I reproduced the examples sugested on Keras blog (https://blog.keras.io/building-autoencoders-in-keras.html). The main idea behind autoencoders is first reduce the dimensionality (**Encoder**) and than later increase back (**Decoder**). 
+Along my studies of convolutional neural networks (ConvNet) autoencoders, I reproduced the examples suggested on Keras blog (https://blog.keras.io/building-autoencoders-in-keras.html). The main idea behind autoencoders is first reduce the dimensionality (**Encoder**) and than later increase back (**Decoder**). 
 
 
 
@@ -14,7 +14,7 @@ One of the most interesting examples we used keras to construct an autoencoder c
 
 <img src="autoencoder/denoising_autoencoder.png">
 
-
+I am currently using ConvNet autoencoders on experiments with Digital Holography Microscopy. Naturally, much complex architecture using batch normalization and other tricks.
 
 
 

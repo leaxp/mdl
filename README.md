@@ -1,33 +1,30 @@
 # My Deep learning (mdl)
 
-My Deep Learning (mdl) is a repository where I'll keep all my learnt example regarding machine learning codes. They will be mostly examples found on web that run and adapt to better works into my brain. Also all examples found here should run in macos using the updated version of Anaconda and the required packages.
+This is a brief summary of my learnt topics in deep learning. Although this is not a tutorial you can still find some usefull codes in the correspodent topic folder.
 
-* For tidness reasons I'll try to mantain all examples organized in a structure that remainds this:
+# 3. Autoencoders
 
-```javascript
-    |--- output
-    |--- core
-    |   |--- __init__.py
-    |   |--- classes.py
-    |--- train.py
-    |--- test.py
-```
+Along my studies of convolutional neural networks (ConvNet) autoencoders, I reproduced the examples sugested on Keras blog (https://blog.keras.io/building-autoencoders-in-keras.html). The main idea behind autoencoders is first reduce the dimensionality (**Encoder**) and than later increase back (**Decoder**). 
 
-> Here the **\__init\__.py** defines the core folder as a module. Usually it imports the create classes like this:
-> 
- ```javascript
- from classes import LeNet, ImageEdit, ImageNormalize
- ```
 
-* Most of examples also contains a python notebook with some basic notes and comments about the code. 
+
+<img src="autoencoder/autoencoder.png" width="550">
+
+One of the most interesting examples we used keras to construct an autoencoder capable to **denoise** the MNIST images. Bellow, the result after 100 epochs training on MNIST data using a ConvNet architecture described on the later figure.
+
+<img src="autoencoder/denoising_autoencoder.png">
+
+
+
+
 
 # 2. APS
-Here as part of the exercises proposed for the quantum machine learning reading group ([qml-rg](https://github.com/peterwittek/qml-rg.git)) we used the basic LeNet CNN architeture to identify the Einstein or Marie Curie images into a given set of images. Here we tried two ways of training the model: Standard and using **Augmentation** for the training dataset. Turns out that the use us augementation improves enormously the accuracy of the model.  
+Here as part of the exercises proposed for the quantum machine learning reading group ([qml-rg](https://github.com/peterwittek/qml-rg.git)) we used the basic LeNet CNN architecture to identify the Einstein or Marie Curie images into a given set of images. Here we tried two ways of training the model: Standard and using **Augmentation** for the training dataset. Turns out that the use us augmentation improves enormously the accuracy of the model.  
 
-| model     | Accuracy | Loss  |
-| --------- |:--------:|:-----:|
-| Standard  | 88.89%   | 1.21  |
-| Augmented |  100%    | 0.0   |
+| model     | Accuracy | Loss |
+| --------- | :------: | :--: |
+| Standard  |  88.89%  | 1.21 |
+| Augmented |   100%   | 0.0  |
 
 ![](APS/output/aps_lenet.gif)
 
